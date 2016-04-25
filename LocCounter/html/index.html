@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    path {
+        fill-rule: evenodd;
+        stroke: #fff;
+    }
+
+    text {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    #path, #percent, #size {
+        font-family: Arial, sans-serif;
+        font-size: 46px;
+        color: #000080;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div style="float: none;padding-left: 50px">
+        <span id="path" ></span><br/>
+        <span id="percent"></span><br />
+        <span id="size"></span>
+    </div>
+    <div id="sunburst" style="float: left;"></div>
+    <div id="wcloud" style="float: right;"></div>
+    <script src="d3.v3.min.js"></script>
+    <script src="d3.layout.cloud.js"></script>
+<script>
+    var width = window.innerWidth / 2 - 15;
+    var height = width;
+</script>
+    <script src="path.js"></script>
+    <script src="sunburst.js"></script>
+    <script src="wcloud.js"></script>
+</body>
